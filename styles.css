@@ -314,6 +314,7 @@ form textarea{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
     
    .service-card{
      display: grid;
@@ -323,6 +324,7 @@ form textarea{
    .card{
      width: 32%;
    }
+  
   }
   
   
@@ -334,4 +336,3 @@ form textarea{
   
   
   
-}
