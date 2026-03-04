@@ -302,6 +302,8 @@ form textarea{
 
 body{
   max-width: 1900px;
+  margin: auto;
+  
 }
   
 .hero{
@@ -331,6 +333,7 @@ body{
   
   
   header{
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
