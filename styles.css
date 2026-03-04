@@ -54,6 +54,7 @@ textarea::placeholder{
 
 
 body{
+  width: 100%;
   background: #eef6f8;
 }
 
@@ -297,25 +298,10 @@ form textarea{
 
 
 @media (min-width: 1024px){
-  /*
-  body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-  }
   
-  .col{
-    width: 50%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  */
 
 body{
-  width: 70vw;
-  max-width: 1500px;
+  max-width: 1900px;
 }
   
 .hero{
@@ -331,7 +317,15 @@ body{
    margin: auto;
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
  }
+
+  .about img{
+    width: 50%;
+  }
+  .article{
+    width: 45%;
+  }
 
   
   
