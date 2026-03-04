@@ -297,7 +297,7 @@ form textarea{
 
 
 @media (min-width: 1024px){
-  
+  /*
   body{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -311,6 +311,21 @@ form textarea{
     align-items: center;
     justify-content: space-evenly;
   }
+  */
+.hero{
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+
+  
+ .about{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+ }
 
   
   
@@ -336,6 +351,11 @@ form textarea{
    .card{
      width: 32%;
    }
+
+  form input,
+  form textarea{
+    width: 30%;
+  }
   
   }
   
