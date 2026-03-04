@@ -1,0 +1,337 @@
+/* typography */
+/*. Global Styles */
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 1.4rem;
+}
+
+
+.contact p{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+button{
+  font-size: 1.1rem;
+}
+
+form{
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+input::placeholder,
+textarea::placeholder{
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+/* Layout */
+
+/* Global style */
+
+
+body{
+  background: #eef6f8;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+button:hover,
+button:focus{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+header {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: hsl(240, 80%, 20%);
+  margin-bottom: 9em;
+  color: #f8f8f8;
+  
+}
+
+header img{
+  width: 35%;
+  onject-fit: cover;
+}
+
+header nav{
+  width: 65%;
+}
+
+nav ul{
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: end;
+  
+  gap: 1rem;
+  padding-right: 1em;
+}
+
+ul a{
+  cursor: pointer;
+}
+
+
+ul a:hover,
+ul a:focus{
+  color: #0AC0D7;
+}
+
+main{
+  width: 100%;
+}
+
+.hero{
+  width: 90%;
+  margin: auto;
+  padding: 3em 1em;
+  background: hsl(240, 80%, 20%);
+  text-align: center;
+  color: #f8f8f8;
+  margin-bottom: 6em;
+  border-radius: 1em;
+}
+
+.hero h1{
+  margin: 0;
+}
+
+.hero button{
+  background: #FDF3F7;
+  padding: 1em;
+  border-radius: 1em;
+  
+}
+
+.hero button:hover,
+.hero button:focus{
+  background: #FDF3F7;
+}
+
+
+
+.about{
+  width: 100%;
+  margin-bottom: 6em;
+  
+}
+
+.about img{
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+  
+  
+
+
+.article{
+  background: #f2f9fc;
+  width: 90%;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.service{
+  background: mintcream;
+  padding: 1em;
+  border-radius: 1.5em;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  margin-bottom: 5em;
+}
+
+.card{
+  max-width: 100%;
+  background: #0AC0D7;
+  padding: 1em;
+  border-radius: 1.2em;
+  margin-bottom: 2em;
+}
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  padding: 1em;
+  background: #f2f9fc;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+  
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea{
+  max-width: 100%;
+  min-height: 38px;
+}
+
+form textarea{
+  resize: vertical;
+  legth: 500;
+  min-height: 65px;
+}
+
+/* this class was created to make my label and input field stay in the same line */
+
+.input-wrapper{
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.btn-wrapper{
+  margin: auto;
+}
+
+.contact button{
+  background: #FFD4B8;
+  padding: 1em 3em;
+  border: none;
+  border-radius: 1em;
+  margin-top: 1em;
+}
+
+.contact button:hover,
+.contact button:fomcus{
+  background: #FFC096;
+}
+
+/* Responsive style for larger screen */
+
+
+@media (min-width: 768px){
+  header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav ul{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+    
+    .about{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    .about img{
+      width: 100%;
+      height: auto;
+      
+    }
+    
+    .article{
+      width: 98%;
+    }
+    
+    .service-card{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1em;
+    }
+    
+    
+    .card-3{
+      max-width: 400px;
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+    
+    form textarea,
+    form input{
+      max-width: 60%;
+    }
+  
+  
+}
+
+
+@media (min-width: 1024px){
+  
+  body{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .col{
+    width: 50%;
+  }
+  
+  
+  header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav-ul{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+   .service-card{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+   
+   .card{
+     width: 32%;
+   }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
