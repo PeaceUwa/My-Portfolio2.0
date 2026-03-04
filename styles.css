@@ -312,6 +312,12 @@ form textarea{
     justify-content: space-evenly;
   }
   */
+
+body{
+  width: 70vw;
+  max-width: 1500px;
+}
+  
 .hero{
   width: 50%;
   height: auto;
